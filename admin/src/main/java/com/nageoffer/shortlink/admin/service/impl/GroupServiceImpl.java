@@ -182,6 +182,14 @@ public class GroupServiceImpl extends ServiceImpl<GroupMapper, GroupDO> implemen
         } catch (DuplicateKeyException e) {
             return null;
         }
+        //布隆过滤器的检查 (contains) 和添加 (add) 并不是原子操作，中间隔着数据库操作。兜底原因：布隆过滤器“失忆” (Data Consistency)
+        //布隆过滤器通常存储在 Redis 中。相比于 MySQL，Redis 的可靠性略低：
+        //
+        //Redis 重启/崩溃：如果 Redis 挂了或者数据丢了（且没有持久化），布隆过滤器可能是空的。
+        //
+        //网络抖动：连接不上 Redis，或者读取超时。
+        //
+        //人为误删：运维手抖清空了缓存。
         return gid;
     }
 }

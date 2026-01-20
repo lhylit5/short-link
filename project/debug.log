@@ -1,0 +1,991 @@
+11:54:40.153 [main] DEBUG reactor.util.Loggers -- Using Slf4j logging framework
+11:54:40.156 [main] DEBUG reactor.core.publisher.Hooks -- Enabling stacktrace debugging via onOperatorDebug
+2026-01-16T11:54:40.908+08:00  WARN 14960 --- [           main] c.a.nacos.client.logging.NacosLogging    : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.7)
+
+2026-01-16T11:54:40.967+08:00  WARN 14960 --- [           main] c.a.nacos.client.logging.NacosLogging    : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2026-01-16T11:54:40.974+08:00  INFO 14960 --- [           main] c.n.s.project.ShortLinkApplication       : Starting ShortLinkApplication using Java 17.0.14 with PID 14960 (E:\JavaProject\shortlink\project\target\classes started by 17254 in E:\JavaProject\shortlink)
+2026-01-16T11:54:40.975+08:00  INFO 14960 --- [           main] c.n.s.project.ShortLinkApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-01-16T11:54:41.853+08:00  INFO 14960 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-16T11:54:41.854+08:00  INFO 14960 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-16T11:54:41.882+08:00  INFO 14960 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2026-01-16T11:54:42.030+08:00  INFO 14960 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3893c9d5-0cb9-37cc-90b2-8ff02d151e66
+2026-01-16T11:54:42.511+08:00  INFO 14960 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2026-01-16T11:54:42.519+08:00  INFO 14960 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-16T11:54:42.520+08:00  INFO 14960 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2026-01-16T11:54:42.663+08:00  INFO 14960 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-16T11:54:42.664+08:00  INFO 14960 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1519 ms
+2026-01-16T11:54:42.844+08:00  INFO 14960 --- [           main] org.redisson.Version                     : Redisson 3.27.2
+2026-01-16T11:54:42.976+08:00  WARN 14960 --- [           main] .r.c.SequentialDnsAddressResolverFactory : DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+2026-01-16T11:54:43.139+08:00  INFO 14960 --- [isson-netty-1-4] o.redisson.connection.ConnectionsHolder  : 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-01-16T11:54:43.217+08:00  INFO 14960 --- [sson-netty-1-19] o.redisson.connection.ConnectionsHolder  : 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@44e4cf8a'
+Parsed mapper file: 'file [E:\JavaProject\shortlink\project\target\classes\mapper\LinkMapper.xml]'
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.3.1 
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: C:\Users\17254\logs\csp\
+INFO: Sentinel log name use pid is: false
+INFO: Sentinel log level is: INFO
+2026-01-16T11:54:44.046+08:00  INFO 14960 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2026-01-16T11:54:44.731+08:00  INFO 14960 --- [           main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2026-01-16T11:54:44.739+08:00  INFO 14960 --- [           main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-01-16T11:54:44.739+08:00  INFO 14960 --- [           main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2026-01-16T11:54:44.740+08:00  INFO 14960 --- [           main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2026-01-16T11:54:44.741+08:00  INFO 14960 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-01-16T11:54:44.741+08:00  INFO 14960 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-01-16T11:54:44.741+08:00  INFO 14960 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2026-01-16T11:54:44.741+08:00  INFO 14960 --- [           main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1067bc4c
+2026-01-16T11:54:45.129+08:00  INFO 14960 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-01-16T11:54:45.203+08:00  INFO 14960 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2026-01-16T11:54:45.210+08:00  WARN 14960 --- [           main] c.a.nacos.client.logging.NacosLogging    : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2026-01-16T11:54:45.210+08:00  INFO 14960 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from ans.namespace attribute : null
+2026-01-16T11:54:45.210+08:00  INFO 14960 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2026-01-16T11:54:45.211+08:00  INFO 14960 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from namespace attribute :null
+2026-01-16T11:54:45.233+08:00  INFO 14960 --- [           main] c.alibaba.nacos.client.utils.ParamUtil   : [settings] [req-serv] nacos-server port:8848
+2026-01-16T11:54:45.233+08:00  INFO 14960 --- [           main] c.alibaba.nacos.client.utils.ParamUtil   : [settings] [http-client] connect timeout:1000
+2026-01-16T11:54:45.233+08:00  INFO 14960 --- [           main] c.alibaba.nacos.client.utils.ParamUtil   : PER_TASK_CONFIG_SIZE: 3000.0
+2026-01-16T11:54:45.237+08:00  INFO 14960 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-01-16T11:54:45.237+08:00  INFO 14960 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-01-16T11:54:45.240+08:00  INFO 14960 --- [           main] c.a.n.c.a.r.identify.CredentialWatcher   : null No credential found
+2026-01-16T11:54:45.247+08:00  INFO 14960 --- [           main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7
+2026-01-16T11:54:45.265+08:00  INFO 14960 --- [           main] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2026-01-16T11:54:45.266+08:00  INFO 14960 --- [           main] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2026-01-16T11:54:45.266+08:00  INFO 14960 --- [           main] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2026-01-16T11:54:45.269+08:00  INFO 14960 --- [           main] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-01-16T11:54:45.292+08:00  INFO 14960 --- [           main] c.a.n.c.remote.client.grpc.GrpcClient    : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2026-01-16T11:54:46.157+08:00  INFO 14960 --- [           main] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1768535685977_127.0.0.1_60894
+2026-01-16T11:54:46.158+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Notify connected event to listeners.
+2026-01-16T11:54:46.158+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.client.naming          : Grpc connection connect
+2026-01-16T11:54:46.158+08:00  INFO 14960 --- [           main] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-01-16T11:54:46.159+08:00  INFO 14960 --- [           main] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1453/0x000002b447a1fb58
+2026-01-16T11:54:46.160+08:00  INFO 14960 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service short-link-project with instance Instance{instanceId='null', ip='192.168.109.1', port=8001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2026-01-16T11:54:46.173+08:00  INFO 14960 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP short-link-project 192.168.109.1:8001 register finished
+2026-01-16T11:54:46.370+08:00  INFO 14960 --- [           main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2026-01-16T11:54:46.370+08:00  INFO 14960 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-01-16T11:54:46.382+08:00  INFO 14960 --- [           main] c.n.s.project.ShortLinkApplication       : Started ShortLinkApplication in 5.984 seconds (process running for 6.952)
+2026-01-16T11:54:46.621+08:00  INFO 14960 --- [3)-192.168.10.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-16T11:54:46.621+08:00  INFO 14960 --- [3)-192.168.10.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-16T11:54:46.622+08:00  INFO 14960 --- [3)-192.168.10.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-16T11:54:46.623+08:00  INFO 14960 --- [2)-192.168.10.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-16T11:54:46.767+08:00  INFO 14960 --- [2)-192.168.10.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-01-16T11:54:46.924+08:00  INFO 14960 --- [2)-192.168.10.1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn0: url=jdbc:h2:mem:config user=SA
+2026-01-16T11:54:46.925+08:00  INFO 14960 --- [2)-192.168.10.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-01-16T11:54:47.054+08:00  INFO 14960 --- [2)-192.168.10.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-01-16T11:54:47.152+08:00  INFO 14960 --- [2)-192.168.10.1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23dc842a
+2026-01-16T11:54:47.152+08:00  INFO 14960 --- [2)-192.168.10.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-01-16T11:54:47.707+08:00  INFO 14960 --- [2)-192.168.10.1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (getNetworkTimeout)
+2026-01-16T11:54:47.708+08:00  INFO 14960 --- [2)-192.168.10.1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@168a5c6
+2026-01-16T11:54:47.710+08:00  INFO 14960 --- [2)-192.168.10.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-16T14:24:07.574+08:00 ERROR 14960 --- [rt-link_stats_1] ageListenerContainer$LoggingErrorHandler : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "records" is null
+	at org.springframework.data.redis.stream.StreamPollTask.deserializeAndEmitRecords(StreamPollTask.java:151) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.doLoop(StreamPollTask.java:128) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.run(StreamPollTask.java:112) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-01-16T14:24:25.427+08:00  WARN 14960 --- [l-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2h21m8s510ms827?s800ns).
+2026-01-16T14:24:25.644+08:00  WARN 14960 --- [l-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=2h21m8s511ms79?s500ns).
+2026-01-16T14:24:26.217+08:00  WARN 14960 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h21m8s511ms47?s800ns).
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34488cc4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1393727878 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT gid as gid, count(*) as shortLinkCount FROM t_link WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+==> Parameters: tSUBMP(String), 0(Integer), 0(Integer), 0(Long)
+2026-01-16T15:12:58.557+08:00  INFO 14960 --- [nio-8001-exec-1] ShardingSphere-SQL                       : Logic SQL: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link 
+ 
+ WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+2026-01-16T15:12:58.558+08:00  INFO 14960 --- [nio-8001-exec-1] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link_1 
+ 
+ WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid ::: [tSUBMP, 0, 0, 0]
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34488cc4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e7c3606] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@355140810 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT gid as gid, count(*) as shortLinkCount FROM t_link WHERE (gid IN (?,?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+==> Parameters: yMTMQ7(String), tSUBMP(String), 0(Integer), 0(Integer), 0(Long)
+2026-01-16T15:18:19.637+08:00  INFO 14960 --- [nio-8001-exec-3] ShardingSphere-SQL                       : Logic SQL: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link 
+ 
+ WHERE (gid IN (?,?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+2026-01-16T15:18:19.637+08:00  INFO 14960 --- [nio-8001-exec-3] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link_1 
+ 
+ WHERE (gid IN (?,?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid ORDER BY gid ASC  ::: [yMTMQ7, tSUBMP, 0, 0, 0]
+2026-01-16T15:18:19.637+08:00  INFO 14960 --- [nio-8001-exec-3] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link_13 
+ 
+ WHERE (gid IN (?,?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid ORDER BY gid ASC  ::: [yMTMQ7, tSUBMP, 0, 0, 0]
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e7c3606]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43998fab] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1206553896 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: tSUBMP(String)
+2026-01-16T15:18:20.090+08:00  INFO 14960 --- [nio-8001-exec-4] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:18:20.090+08:00  INFO 14960 --- [nio-8001-exec-4] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_1 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [tSUBMP]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43998fab]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8a95e9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1505041024 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: yMTMQ7(String)
+2026-01-16T15:18:22.920+08:00  INFO 14960 --- [nio-8001-exec-5] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:18:22.920+08:00  INFO 14960 --- [nio-8001-exec-5] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_13 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [yMTMQ7]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8a95e9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bb99aa1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1009770548 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: tSUBMP(String)
+2026-01-16T15:18:23.794+08:00  INFO 14960 --- [nio-8001-exec-6] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:18:23.794+08:00  INFO 14960 --- [nio-8001-exec-6] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_1 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [tSUBMP]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bb99aa1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@515ce538] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1432579019 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: yMTMQ7(String)
+2026-01-16T15:18:25.857+08:00  INFO 14960 --- [nio-8001-exec-7] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:18:25.857+08:00  INFO 14960 --- [nio-8001-exec-7] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_13 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [yMTMQ7]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@515ce538]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36d0117c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@854557566 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: tSUBMP(String)
+2026-01-16T15:18:26.361+08:00  INFO 14960 --- [nio-8001-exec-9] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:18:26.361+08:00  INFO 14960 --- [nio-8001-exec-9] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_1 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [tSUBMP]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36d0117c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52ca0dfd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@537477164 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: yMTMQ7(String)
+2026-01-16T15:18:27.343+08:00  INFO 14960 --- [nio-8001-exec-8] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:18:27.343+08:00  INFO 14960 --- [nio-8001-exec-8] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_13 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [yMTMQ7]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52ca0dfd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@373c639f] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb279a5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@855892384 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+JDBC Connection [HikariProxyConnection@586563048 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@30dbfee2] will not be managed by Spring
+==>  Preparing: SELECT gid as gid, count(*) as shortLinkCount FROM t_link WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+==> Parameters: tSUBMP(String), 0(Integer), 0(Integer), 0(Long)
+2026-01-16T15:18:35.063+08:00  INFO 14960 --- [nio-8001-exec-1] ShardingSphere-SQL                       : Logic SQL: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link 
+ 
+ WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+==> Parameters: tSUBMP(String)
+2026-01-16T15:18:35.063+08:00  INFO 14960 --- [nio-8001-exec-1] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link_1 
+ 
+ WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid ::: [tSUBMP, 0, 0, 0]
+2026-01-16T15:18:35.063+08:00  INFO 14960 --- [io-8001-exec-10] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:18:35.063+08:00  INFO 14960 --- [io-8001-exec-10] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_1 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [tSUBMP]
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb279a5]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@373c639f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63ad7232] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1937063343 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: tSUBMP(String)
+2026-01-16T15:18:35.301+08:00  INFO 14960 --- [nio-8001-exec-2] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:18:35.301+08:00  INFO 14960 --- [nio-8001-exec-2] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_1 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [tSUBMP]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63ad7232]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aa9d48c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2072203182 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT gid as gid, count(*) as shortLinkCount FROM t_link WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+==> Parameters: tSUBMP(String), 0(Integer), 0(Integer), 0(Long)
+2026-01-16T15:20:39.640+08:00  INFO 14960 --- [nio-8001-exec-5] ShardingSphere-SQL                       : Logic SQL: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link 
+ 
+ WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+2026-01-16T15:20:39.640+08:00  INFO 14960 --- [nio-8001-exec-5] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link_1 
+ 
+ WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid ::: [tSUBMP, 0, 0, 0]
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aa9d48c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44e53793] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@179007445 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: tSUBMP(String)
+2026-01-16T15:20:39.760+08:00  INFO 14960 --- [nio-8001-exec-6] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:20:39.760+08:00  INFO 14960 --- [nio-8001-exec-6] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_1 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [tSUBMP]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44e53793]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17f8ab6c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@557578638 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT gid as gid, count(*) as shortLinkCount FROM t_link WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+==> Parameters: tSUBMP(String), 0(Integer), 0(Integer), 0(Long)
+2026-01-16T15:20:51.542+08:00  INFO 14960 --- [nio-8001-exec-7] ShardingSphere-SQL                       : Logic SQL: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link 
+ 
+ WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+2026-01-16T15:20:51.542+08:00  INFO 14960 --- [nio-8001-exec-7] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link_1 
+ 
+ WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid ::: [tSUBMP, 0, 0, 0]
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17f8ab6c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@703dca2c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1179676326 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@2bff831f] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: tSUBMP(String)
+2026-01-16T15:20:51.883+08:00  INFO 14960 --- [nio-8001-exec-9] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:20:51.883+08:00  INFO 14960 --- [nio-8001-exec-9] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_1 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [tSUBMP]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@703dca2c]
+2026-01-16T15:23:26.214+08:00 ERROR 14960 --- [io-8001-exec-10] c.n.s.p.c.web.GlobalExceptionHandler     : [POST] http://192.168.109.1:8001/api/short-link/v1/create [ex] ClientException{code='A000001',message='演示环境为避免恶意攻击，请生成以下网站跳转链接：拿个offer,知乎,掘金,博客园'}
+2026-01-16T15:25:02.141+08:00 ERROR 14960 --- [nio-8001-exec-3] c.n.s.p.c.web.GlobalExceptionHandler     : [POST] http://192.168.109.1:8001/api/short-link/v1/create [ex] ClientException{code='A000001',message='演示环境为避免恶意攻击，请生成以下网站跳转链接：拿个offer,知乎,掘金,博客园'}
+2026-01-16T15:25:33.181+08:00 ERROR 14960 --- [nio-8001-exec-4] c.n.s.p.c.web.GlobalExceptionHandler     : [POST] http://192.168.109.1:8001/api/short-link/v1/create [ex] ClientException{code='A000001',message='演示环境为避免恶意攻击，请生成以下网站跳转链接：拿个offer,知乎,掘金,博客园'}
+2026-01-16T15:38:27.479+08:00 ERROR 14960 --- [nio-8001-exec-6] c.n.s.p.c.web.GlobalExceptionHandler     : [POST] http://192.168.109.1:8001/api/short-link/v1/create [ex] ClientException{code='A000001',message='演示环境为避免恶意攻击，请生成以下网站跳转链接：拿个offer,知乎,掘金,博客园'}
+2026-01-16T15:39:00.212+08:00 ERROR 14960 --- [rt-link_stats_1] ageListenerContainer$LoggingErrorHandler : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "records" is null
+	at org.springframework.data.redis.stream.StreamPollTask.deserializeAndEmitRecords(StreamPollTask.java:151) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.doLoop(StreamPollTask.java:128) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.run(StreamPollTask.java:112) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-01-16T15:54:03.284+08:00  WARN 14960 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m3s73ms525?s599ns).
+2026-01-16T15:54:03.284+08:00  WARN 14960 --- [l-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=15m3s73ms568?s900ns).
+2026-01-16T15:54:03.284+08:00  WARN 14960 --- [l-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m3s73ms497?s601ns).
+2026-01-16T15:54:03.289+08:00 ERROR 14960 --- [nio-8001-exec-7] c.n.s.p.c.web.GlobalExceptionHandler     : [POST] http://192.168.109.1:8001/api/short-link/v1/create [ex] ClientException{code='A000001',message='演示环境为避免恶意攻击，请生成以下网站跳转链接：拿个offer,知乎,掘金,博客园'}
+2026-01-16T15:54:03.292+08:00  WARN 14960 --- [nio-8001-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler com.nageoffer.shortlink.project.common.web.GlobalExceptionHandler#abstractException(HttpServletRequest, AbstractException)
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:267) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153) ~[na:na]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1200) ~[jackson-core-2.14.3.jar:2.14.3]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1063) ~[jackson-databind-2.14.3.jar:2.14.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:483) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:103) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:297) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:194) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:413) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:74) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1341) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1152) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532) ~[na:na]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:118) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1381) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:566) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:220) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1245) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:399) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:301) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	... 61 common frames omitted
+
+2026-01-16T15:54:03.296+08:00 ERROR 14960 --- [nio-8001-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: ClientException{code='A000001',message='演示环境为避免恶意攻击，请生成以下网站跳转链接：拿个offer,知乎,掘金,博客园'}] with root cause
+
+com.nageoffer.shortlink.project.common.convention.exception.ClientException: 演示环境为避免恶意攻击，请生成以下网站跳转链接：拿个offer,知乎,掘金,博客园
+	at com.nageoffer.shortlink.project.service.impl.ShortLinkServiceImpl.verificationWhitelist(ShortLinkServiceImpl.java:574) ~[classes/:na]
+	at com.nageoffer.shortlink.project.service.impl.ShortLinkServiceImpl.createShortLink(ShortLinkServiceImpl.java:120) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702) ~[spring-aop-6.0.9.jar:6.0.9]
+	at com.nageoffer.shortlink.project.service.impl.ShortLinkServiceImpl$$SpringCGLIB$$0.createShortLink(<generated>) ~[classes/:na]
+	at com.nageoffer.shortlink.project.controller.ShortLinkController.createShortLink(ShortLinkController.java:74) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.0.9.jar:6.0.9]
+	at com.alibaba.csp.sentinel.annotation.aspectj.SentinelResourceAspect.invokeResourceWithSentinel(SentinelResourceAspect.java:57) ~[sentinel-annotation-aspectj-1.8.6.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702) ~[spring-aop-6.0.9.jar:6.0.9]
+	at com.nageoffer.shortlink.project.controller.ShortLinkController$$SpringCGLIB$$0.createShortLink(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-01-16T15:54:03.300+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Server healthy check fail, currentConnection = 1768535685977_127.0.0.1_60894
+2026-01-16T15:54:03.301+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2026-01-16T15:54:03.301+08:00  INFO 14960 --- [t.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2026-01-16T15:54:03.303+08:00  INFO 14960 --- [-127.0.0.1-1104] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Receive server push request, request = ClientDetectionRequest, requestId = 18
+2026-01-16T15:54:03.303+08:00  INFO 14960 --- [-127.0.0.1-1104] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Ack server push request, request = ClientDetectionRequest, requestId = 18
+2026-01-16T15:54:03.304+08:00  INFO 14960 --- [-127.0.0.1-1104] c.a.n.c.remote.client.grpc.GrpcClient    : [1768535685977_127.0.0.1_60894]Ignore complete event,isRunning:false,isAbandon=false
+2026-01-16T15:54:03.417+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Success to connect a server [127.0.0.1:8848], connectionId = 1768550043305_127.0.0.1_50386
+2026-01-16T15:54:03.417+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Abandon prev connection, server is 127.0.0.1:8848, connectionId is 1768535685977_127.0.0.1_60894
+2026-01-16T15:54:03.417+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1768535685977_127.0.0.1_60894
+2026-01-16T15:54:03.420+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Notify disconnected event to listeners
+2026-01-16T15:54:03.420+08:00  WARN 14960 --- [t.remote.worker] com.alibaba.nacos.client.naming          : Grpc connection disconnect, mark to redo
+2026-01-16T15:54:03.421+08:00  WARN 14960 --- [t.remote.worker] com.alibaba.nacos.client.naming          : mark to redo completed
+2026-01-16T15:54:03.421+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Notify connected event to listeners.
+2026-01-16T15:54:03.421+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.client.naming          : Grpc connection connect
+2026-01-16T15:54:06.285+08:00  INFO 14960 --- [ing.grpc.redo.0] com.alibaba.nacos.client.naming          : Redo instance operation REGISTER for DEFAULT_GROUP@@short-link-project
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55fcb238] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@836383391 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@23d260f5] will not be managed by Spring
+==>  Preparing: SELECT gid as gid, count(*) as shortLinkCount FROM t_link WHERE (gid IN (?,?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+==> Parameters: dXT1kc(String), tSUBMP(String), 0(Integer), 0(Integer), 0(Long)
+2026-01-16T15:54:12.954+08:00  INFO 14960 --- [nio-8001-exec-9] ShardingSphere-SQL                       : Logic SQL: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link 
+ 
+ WHERE (gid IN (?,?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+2026-01-16T15:54:12.954+08:00  INFO 14960 --- [nio-8001-exec-9] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link_1 
+ 
+ WHERE (gid IN (?,?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid ORDER BY gid ASC  ::: [dXT1kc, tSUBMP, 0, 0, 0]
+2026-01-16T15:54:12.954+08:00  INFO 14960 --- [nio-8001-exec-9] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link_7 
+ 
+ WHERE (gid IN (?,?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid ORDER BY gid ASC  ::: [dXT1kc, tSUBMP, 0, 0, 0]
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55fcb238]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73d8f889] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@423288574 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@23d260f5] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: tSUBMP(String)
+2026-01-16T15:54:13.042+08:00  INFO 14960 --- [nio-8001-exec-8] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:54:13.042+08:00  INFO 14960 --- [nio-8001-exec-8] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_1 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [tSUBMP]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73d8f889]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16bfb2a2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1489186934 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@23d260f5] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: dXT1kc(String)
+2026-01-16T15:54:17.686+08:00  INFO 14960 --- [nio-8001-exec-1] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:54:17.686+08:00  INFO 14960 --- [nio-8001-exec-1] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_7 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [dXT1kc]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16bfb2a2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@414e6efa] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1782522987 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@23d260f5] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: tSUBMP(String)
+2026-01-16T15:54:19.810+08:00  INFO 14960 --- [io-8001-exec-10] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:54:19.810+08:00  INFO 14960 --- [io-8001-exec-10] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_1 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [tSUBMP]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@414e6efa]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b3642cb] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@58887549 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@23d260f5] will not be managed by Spring
+==>  Preparing: SELECT gid as gid, count(*) as shortLinkCount FROM t_link WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+==> Parameters: tSUBMP(String), 0(Integer), 0(Integer), 0(Long)
+2026-01-16T15:54:19.878+08:00  INFO 14960 --- [nio-8001-exec-2] ShardingSphere-SQL                       : Logic SQL: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link 
+ 
+ WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid
+2026-01-16T15:54:19.879+08:00  INFO 14960 --- [nio-8001-exec-2] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT  
+gid as gid, count(*) as shortLinkCount
+  FROM t_link_1 
+ 
+ WHERE (gid IN (?) AND enable_status = ? AND del_flag = ? AND del_time = ?) GROUP BY gid ::: [tSUBMP, 0, 0, 0]
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b3642cb]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b737eae] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1167714145 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@23d260f5] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+==> Parameters: tSUBMP(String)
+2026-01-16T15:54:19.910+08:00  INFO 14960 --- [nio-8001-exec-3] ShardingSphere-SQL                       : Logic SQL: SELECT COUNT(*) AS total FROM t_link t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0
+2026-01-16T15:54:19.910+08:00  INFO 14960 --- [nio-8001-exec-3] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: SELECT COUNT(*) AS total FROM t_link_1 t WHERE t.gid = ? AND t.enable_status = 0 AND t.del_flag = 0 ::: [tSUBMP]
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b737eae]
+2026-01-16T15:55:46.771+08:00 ERROR 14960 --- [rt-link_stats_1] ageListenerContainer$LoggingErrorHandler : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "records" is null
+	at org.springframework.data.redis.stream.StreamPollTask.deserializeAndEmitRecords(StreamPollTask.java:151) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.doLoop(StreamPollTask.java:128) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.run(StreamPollTask.java:112) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-01-16T15:56:00.231+08:00 ERROR 14960 --- [rt-link_stats_1] ageListenerContainer$LoggingErrorHandler : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "records" is null
+	at org.springframework.data.redis.stream.StreamPollTask.deserializeAndEmitRecords(StreamPollTask.java:151) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.doLoop(StreamPollTask.java:128) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.run(StreamPollTask.java:112) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-01-16T15:59:16.388+08:00  WARN 14960 --- [l-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=3m10s274ms542?s300ns).
+2026-01-16T15:59:16.388+08:00  WARN 14960 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m10s274ms485?s399ns).
+2026-01-16T15:59:16.388+08:00  WARN 14960 --- [l-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m10s274ms392?s101ns).
+2026-01-16T15:59:16.388+08:00 ERROR 14960 --- [rt-link_stats_1] ageListenerContainer$LoggingErrorHandler : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "records" is null
+	at org.springframework.data.redis.stream.StreamPollTask.deserializeAndEmitRecords(StreamPollTask.java:151) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.doLoop(StreamPollTask.java:128) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.run(StreamPollTask.java:112) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-01-16T15:59:16.392+08:00  INFO 14960 --- [-127.0.0.1-1138] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Receive server push request, request = ClientDetectionRequest, requestId = 21
+2026-01-16T15:59:16.393+08:00  INFO 14960 --- [-127.0.0.1-1138] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Ack server push request, request = ClientDetectionRequest, requestId = 21
+2026-01-16T15:59:16.395+08:00 ERROR 14960 --- [-127.0.0.1-1138] c.a.n.c.remote.client.grpc.GrpcClient    : [1768550043305_127.0.0.1_50386]Request stream onCompleted, switch server
+2026-01-16T15:59:16.428+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Server healthy check fail, currentConnection = 1768550043305_127.0.0.1_50386
+2026-01-16T15:59:16.428+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2026-01-16T15:59:16.428+08:00  INFO 14960 --- [t.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2026-01-16T15:59:19.930+08:00 ERROR 14960 --- [t.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 127.0.0.1 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 496 milliseconds, 170699 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@1b0bcc41[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@46a4ad70, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@349c7bc0, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@6d48105e}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.2.1.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218) ~[nacos-client-2.2.1.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329) ~[nacos-client-2.2.1.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502) ~[nacos-client-2.2.1.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343) ~[nacos-client-2.2.1.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-01-16T17:07:42.427+08:00  WARN 14960 --- [l-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1h8m26s37ms966?s901ns).
+2026-01-16T17:07:42.427+08:00  WARN 14960 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h8m26s37ms549?s601ns).
+2026-01-16T17:07:42.427+08:00  WARN 14960 --- [l-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h8m26s38ms784?s200ns).
+2026-01-16T17:07:42.429+08:00 ERROR 14960 --- [rt-link_stats_1] ageListenerContainer$LoggingErrorHandler : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "records" is null
+	at org.springframework.data.redis.stream.StreamPollTask.deserializeAndEmitRecords(StreamPollTask.java:151) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.doLoop(StreamPollTask.java:128) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at org.springframework.data.redis.stream.StreamPollTask.run(StreamPollTask.java:112) ~[spring-data-redis-3.0.6.jar:3.0.6]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+ERROR: transport error 202: send failed: Software caused connection abort
+ERROR: transport error 202: send failed: Software caused connection abort
+2026-01-16T17:07:42.463+08:00  WARN 14960 --- [       Thread-7] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2026-01-16T17:07:42.463+08:00  WARN 14960 --- [       Thread-7] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2026-01-16T17:07:42.463+08:00  WARN 14960 --- [      Thread-10] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2026-01-16T17:07:42.465+08:00  WARN 14960 --- [      Thread-10] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2026-01-16T17:07:42.477+08:00  INFO 14960 --- [ionShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-01-16T17:07:42.543+08:00  INFO 14960 --- [t.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2026-01-16T17:07:42.656+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Success to connect a server [127.0.0.1:8848], connectionId = 1768554462551_127.0.0.1_59393
+2026-01-16T17:07:42.656+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Abandon prev connection, server is 127.0.0.1:8848, connectionId is 1768550043305_127.0.0.1_50386
+2026-01-16T17:07:42.656+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1768550043305_127.0.0.1_50386
+2026-01-16T17:07:42.657+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2026-01-16T17:07:42.657+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Notify disconnected event to listeners
+2026-01-16T17:07:42.657+08:00  INFO 14960 --- [t.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2026-01-16T17:07:42.657+08:00  WARN 14960 --- [t.remote.worker] com.alibaba.nacos.client.naming          : Grpc connection disconnect, mark to redo
+2026-01-16T17:07:42.657+08:00  WARN 14960 --- [t.remote.worker] com.alibaba.nacos.client.naming          : mark to redo completed
+2026-01-16T17:07:42.657+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Notify connected event to listeners.
+2026-01-16T17:07:42.657+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.client.naming          : Grpc connection connect
+2026-01-16T17:07:42.777+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Success to connect a server [127.0.0.1:8848], connectionId = 1768554462661_127.0.0.1_59394
+2026-01-16T17:07:42.777+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Abandon prev connection, server is 127.0.0.1:8848, connectionId is 1768554462551_127.0.0.1_59393
+2026-01-16T17:07:42.777+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1768554462551_127.0.0.1_59393
+2026-01-16T17:07:42.779+08:00  INFO 14960 --- [-127.0.0.1-1157] c.a.n.c.remote.client.grpc.GrpcClient    : [1768554462551_127.0.0.1_59393]Ignore complete event,isRunning:true,isAbandon=true
+2026-01-16T17:07:42.779+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Notify disconnected event to listeners
+2026-01-16T17:07:42.779+08:00  WARN 14960 --- [t.remote.worker] com.alibaba.nacos.client.naming          : Grpc connection disconnect, mark to redo
+2026-01-16T17:07:42.779+08:00  WARN 14960 --- [t.remote.worker] com.alibaba.nacos.client.naming          : mark to redo completed
+2026-01-16T17:07:42.779+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.common.remote.client   : [63b6dca3-50fe-4c7b-b6cc-c2067d49b7e7] Notify connected event to listeners.
+2026-01-16T17:07:42.779+08:00  INFO 14960 --- [t.remote.worker] com.alibaba.nacos.client.naming          : Grpc connection connect
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2eed108f]
+JDBC Connection [HikariProxyConnection@2115119536 wrapping org.apache.shardingsphere.driver.jdbc.core.connection.ShardingSphereConnection@23d260f5] will be managed by Spring
+==>  Preparing: INSERT INTO t_link ( id, domain, short_uri, full_short_url, origin_url, gid, enable_status, created_type, valid_date_type, `describe`, favicon, total_pv, total_uv, total_uip, del_time, create_time, update_time, del_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2012089369183125506(Long), nurl.ink:8001(String), 36u5mb(String), nurl.ink:8001/36u5mb(String), https://nageoffer.com/(String), tSUBMP(String), 0(Integer), 1(Integer), 0(Integer), 拿个offer-开源&项目实战(String), https://nageoffer.com/img/favicon.png(String), 0(Integer), 0(Integer), 0(Integer), 0(Long), 2026-01-16 17:07:43.094(Timestamp), 2026-01-16 17:07:43.094(Timestamp), 0(Integer)
+2026-01-16T17:07:43.231+08:00  INFO 14960 --- [nio-8001-exec-6] ShardingSphere-SQL                       : Logic SQL: INSERT INTO t_link  ( id,
+domain,
+short_uri,
+full_short_url,
+origin_url,
+
+gid,
+enable_status,
+created_type,
+valid_date_type,
+
+`describe`,
+favicon,
+total_pv,
+total_uv,
+total_uip,
+del_time,
+create_time,
+update_time,
+del_flag )  VALUES  ( ?,
+?,
+?,
+?,
+?,
+
+?,
+?,
+?,
+?,
+
+?,
+?,
+?,
+?,
+?,
+?,
+?,
+?,
+? )
+2026-01-16T17:07:43.232+08:00  INFO 14960 --- [nio-8001-exec-6] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: INSERT INTO t_link_1  ( id,
+domain,
+short_uri,
+full_short_url,
+origin_url,
+
+gid,
+enable_status,
+created_type,
+valid_date_type,
+
+`describe`,
+favicon,
+total_pv,
+total_uv,
+total_uip,
+del_time,
+create_time,
+update_time,
+del_flag )  VALUES  (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ::: [2012089369183125506, nurl.ink:8001, 36u5mb, nurl.ink:8001/36u5mb, https://nageoffer.com/, tSUBMP, 0, 1, 0, 拿个offer-开源&项目实战, https://nageoffer.com/img/favicon.png, 0, 0, 0, 0, 2026-01-16 17:07:43.094, 2026-01-16 17:07:43.094, 0]
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2eed108f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2eed108f] from current transaction
+==>  Preparing: INSERT INTO t_link_goto ( id, gid, full_short_url ) VALUES ( ?, ?, ? )
+==> Parameters: 2012089369866797058(Long), tSUBMP(String), nurl.ink:8001/36u5mb(String)
+2026-01-16T17:07:43.260+08:00  INFO 14960 --- [nio-8001-exec-6] ShardingSphere-SQL                       : Logic SQL: INSERT INTO t_link_goto  ( id,
+gid,
+full_short_url )  VALUES  ( ?,
+?,
+? )
+2026-01-16T17:07:43.260+08:00  INFO 14960 --- [nio-8001-exec-6] ShardingSphere-SQL                       : Actual SQL: ds_0 ::: INSERT INTO t_link_goto_13  ( id,
+gid,
+full_short_url )  VALUES  (?, ?, ?) ::: [2012089369866797058, tSUBMP, nurl.ink:8001/36u5mb]
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2eed108f]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2eed108f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2eed108f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2eed108f]
+2026-01-16T17:07:43.388+08:00 ERROR 14960 --- [nio-8001-exec-6] c.n.s.p.c.web.GlobalExceptionHandler     : [POST] http://192.168.109.1:8001/api/short-link/v1/create 
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:267) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153) ~[na:na]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1200) ~[jackson-core-2.14.3.jar:2.14.3]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1063) ~[jackson-databind-2.14.3.jar:2.14.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:483) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:103) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:297) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:194) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532) ~[na:na]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:118) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1381) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:566) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:220) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1245) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:399) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:301) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	... 58 common frames omitted
+
+2026-01-16T17:07:43.390+08:00  WARN 14960 --- [nio-8001-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler com.nageoffer.shortlink.project.common.web.GlobalExceptionHandler#defaultErrorHandler(HttpServletRequest, Throwable)
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:267) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153) ~[na:na]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1200) ~[jackson-core-2.14.3.jar:2.14.3]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1063) ~[jackson-databind-2.14.3.jar:2.14.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:483) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:103) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:297) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:194) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:413) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:74) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1341) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1152) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532) ~[na:na]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:118) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1381) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:566) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:220) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1245) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:399) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:301) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	... 61 common frames omitted
+
+2026-01-16T17:07:43.458+08:00  INFO 14960 --- [ionShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2026-01-16T17:07:43.458+08:00  INFO 14960 --- [ionShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-01-16T17:07:43.458+08:00  INFO 14960 --- [ionShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-01-16T17:07:43.458+08:00  INFO 14960 --- [ionShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-01-16T17:07:43.465+08:00  INFO 14960 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2026-01-16T17:07:43.465+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service short-link-project with instance: Instance{instanceId='null', ip='192.168.109.1', port=8001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2026-01-16T17:07:43.468+08:00  INFO 14960 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2026-01-16T17:07:43.469+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2026-01-16T17:07:43.469+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2026-01-16T17:07:43.470+08:00  WARN 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2026-01-16T17:07:43.470+08:00  WARN 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2026-01-16T17:07:43.470+08:00  WARN 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2026-01-16T17:07:43.470+08:00  WARN 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@1e2a1922[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2026-01-16T17:07:43.470+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1768554462661_127.0.0.1_59394
+2026-01-16T17:07:43.472+08:00  INFO 14960 --- [ionShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@2c37e418[Running, pool size = 15, active threads = 1, queued tasks = 0, completed tasks = 1159]
+2026-01-16T17:07:43.473+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@12ffb05f[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 1707]
+2026-01-16T17:07:43.474+08:00  WARN 14960 --- [-127.0.0.1-1159] c.a.n.c.remote.client.grpc.GrpcClient    : [1768554462661_127.0.0.1_59394]Ignore error event,isRunning:false,isAbandon=false
+2026-01-16T17:07:43.474+08:00  INFO 14960 --- [ionShutdownHook] c.a.n.c.a.r.identify.CredentialWatcher   : [null] CredentialWatcher is stopped
+2026-01-16T17:07:43.474+08:00  INFO 14960 --- [ionShutdownHook] c.a.n.c.a.r.identify.CredentialService   : [null] CredentialService is freed
+2026-01-16T17:07:43.474+08:00  INFO 14960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2026-01-16T17:07:43.476+08:00  INFO 14960 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-16T17:07:43.477+08:00  INFO 14960 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

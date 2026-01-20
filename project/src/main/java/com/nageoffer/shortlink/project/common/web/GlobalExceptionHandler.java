@@ -43,7 +43,9 @@ import java.util.Optional;
 @Component
 @Slf4j
 @RestControllerAdvice
-public class GlobalExceptionHandler {
+public class
+
+GlobalExceptionHandler {
 
     /**
      * 拦截参数验证异常

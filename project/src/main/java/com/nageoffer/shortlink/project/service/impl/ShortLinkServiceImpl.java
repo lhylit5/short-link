@@ -370,6 +370,7 @@ public class ShortLinkServiceImpl extends ServiceImpl<ShortLinkMapper, ShortLink
 
     @SneakyThrows
     @Override
+    //待优化 很多redis 使用管道？
     public void restoreUrl(String shortUri, ServletRequest request, ServletResponse response) {
         // 短链接接口的并发量有多少？如何测试？详情查看：https://nageoffer.com/shortlink/question
         // 面试中如何回答短链接是如何跳转长链接？详情查看：https://nageoffer.com/shortlink/question
@@ -393,6 +394,7 @@ public class ShortLinkServiceImpl extends ServiceImpl<ShortLinkMapper, ShortLink
         }
         String gotoIsNullShortLink = stringRedisTemplate.opsForValue().get(String.format(GOTO_IS_NULL_SHORT_LINK_KEY, fullShortUrl));
         if (StrUtil.isNotBlank(gotoIsNullShortLink)) {
+            //若该键值不为空，说明之前查如果‘-’，即数据库中不存在
             ((HttpServletResponse) response).sendRedirect("/page/notfound");
             return;
         }
