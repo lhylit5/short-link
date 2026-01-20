@@ -96,7 +96,7 @@ public class ShortLinkStatsSaveConsumer implements RocketMQListener<Map<String, 
             }
         } catch (Throwable ex) {
             // 删除幂等标识
-            messageQueueIdempotentHandler.delMessageProcessed(id.toString());
+            messageQueueIdempotentHandler.delMessageProcessed(keys);
             log.error("记录短链接监控消费异常", ex);
             throw ex;
         }
