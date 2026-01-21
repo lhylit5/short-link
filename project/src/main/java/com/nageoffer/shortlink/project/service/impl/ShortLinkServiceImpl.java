@@ -443,50 +443,95 @@ public class ShortLinkServiceImpl extends ServiceImpl<ShortLinkMapper, ShortLink
         }
     }
 
+    /**
+     * 构建短链接统计实体，并处理 UV (Unique Visitor) 标识
+     * * @param fullShortUrl 完整短链接 (如 nurl.ink/AbCd12)
+     * @param request      HTTP 请求
+     * @param response     HTTP 响应
+     * @return 统计实体对象 DTO
+     */
     private ShortLinkStatsRecordDTO buildLinkStatsRecordAndSetUser(String fullShortUrl, ServletRequest request, ServletResponse response) {
+        // 1. 初始化 UV 标识 (AtomicBoolean 用于在 Lambda 表达式中修改值)
+        // 默认为 false，表示不是新访客
         AtomicBoolean uvFirstFlag = new AtomicBoolean();
+
+        // 2. 获取请求携带的所有 Cookie
         Cookie[] cookies = ((HttpServletRequest) request).getCookies();
+
+        // AtomicReference 用于在 Lambda 中安全地引用和修改 UV 的 UUID 字符串
         AtomicReference<String> uv = new AtomicReference<>();
+
+        // 3. 定义一个“新用户处理任务” (Runnable)
+        // 当用户没有 Cookie 或 Cookie 中没有 "uv" 字段时执行
         Runnable addResponseCookieTask = () -> {
+            // 生成一个新的 UUID 作为用户唯一标识
             uv.set(UUID.fastUUID().toString());
+
+            // 创建名为 "uv" 的 Cookie
             Cookie uvCookie = new Cookie("uv", uv.get());
-            uvCookie.setMaxAge(60 * 60 * 24 * 30);
+            uvCookie.setMaxAge(60 * 60 * 24 * 30); // 有效期 30 天
+            // 设置 Cookie 路径，仅对当前短链接后缀有效 (防止不同短链接干扰，虽然通常建议设为根路径 /)
             uvCookie.setPath(StrUtil.sub(fullShortUrl, fullShortUrl.indexOf("/"), fullShortUrl.length()));
+
+            // 将 Cookie 写入响应头，发回给浏览器
             ((HttpServletResponse) response).addCookie(uvCookie);
+
+            // 标记为新访客 (uvFirstFlag = true)
             uvFirstFlag.set(Boolean.TRUE);
+
+            // 将这个新 UV 存入 Redis Set 进行去重记录
             stringRedisTemplate.opsForSet().add(SHORT_LINK_STATS_UV_KEY + fullShortUrl, uv.get());
         };
+
+        // 4. 判断请求中是否有 Cookie
         if (ArrayUtil.isNotEmpty(cookies)) {
+            // 尝试在 Cookie 中寻找名为 "uv" 的键
             Arrays.stream(cookies)
                     .filter(each -> Objects.equals(each.getName(), "uv"))
                     .findFirst()
                     .map(Cookie::getValue)
                     .ifPresentOrElse(each -> {
+                        // === 情况 A: 用户带着 "uv" Cookie 来了 (老用户或回头客) ===
                         uv.set(each);
+
+                        // 尝试把这个 uv 标识加入 Redis Set
+                        // Redis Set 的 add 方法返回值：
+                        // null/0 -> 元素已存在 (说明今天已经统计过 UV 了)
+                        // > 0    -> 元素不存在，添加成功 (说明是今天第一次访问)
                         Long uvAdded = stringRedisTemplate.opsForSet().add(SHORT_LINK_STATS_UV_KEY + fullShortUrl, each);
+
+                        // 根据 Redis 返回值判断是否要增加 UV 计数
                         uvFirstFlag.set(uvAdded != null && uvAdded > 0L);
-                    }, addResponseCookieTask);
+                    }, addResponseCookieTask); // === 情况 B: 有 Cookie 列表但没有 "uv" 字段 -> 执行新用户任务
         } else {
+            // === 情况 C: 完全没有 Cookie -> 执行新用户任务
             addResponseCookieTask.run();
         }
+
+        // 5. 获取访问环境信息 (IP, OS, 浏览器, 设备, 网络)
         String remoteAddr = LinkUtil.getActualIp(((HttpServletRequest) request));
         String os = LinkUtil.getOs(((HttpServletRequest) request));
         String browser = LinkUtil.getBrowser(((HttpServletRequest) request));
         String device = LinkUtil.getDevice(((HttpServletRequest) request));
         String network = LinkUtil.getNetwork(((HttpServletRequest) request));
+
+        // 6. 处理 UIP (Unique IP) 统计
+        // 逻辑同 UV，使用 Redis Set 存储 IP 地址进行去重
         Long uipAdded = stringRedisTemplate.opsForSet().add(SHORT_LINK_STATS_UIP_KEY + fullShortUrl, remoteAddr);
         boolean uipFirstFlag = uipAdded != null && uipAdded > 0L;
+
+        // 7. 构建并返回 DTO 对象
         return ShortLinkStatsRecordDTO.builder()
                 .fullShortUrl(fullShortUrl)
-                .uv(uv.get())
-                .uvFirstFlag(uvFirstFlag.get())
-                .uipFirstFlag(uipFirstFlag)
+                .uv(uv.get()) // 用户唯一标识
+                .uvFirstFlag(uvFirstFlag.get()) // 是否增加 UV 计数
+                .uipFirstFlag(uipFirstFlag) // 是否增加 UIP 计数
                 .remoteAddr(remoteAddr)
                 .os(os)
                 .browser(browser)
                 .device(device)
                 .network(network)
-                .currentDate(new Date())
+                .currentDate(new Date()) // 当前访问时间
                 .build();
     }
 
