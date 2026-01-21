@@ -32,7 +32,7 @@ short-link:
     time-window: 1
     max-access-count: 20
   domain:
-    default: nurl.ink:8003
+    default: localhost:8003
   demo-mode:
     enable: false
     blacklist:
